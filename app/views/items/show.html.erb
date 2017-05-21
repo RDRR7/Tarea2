@@ -1,0 +1,13 @@
+<div class="row">
+	<aside class="col-md-4">
+		<h1><%= @item.title %></h1>
+		<p>	Date: <%= @item.created_at.strftime("%B %d, %Y") %> </p>
+		<% if !@item.avatar_url.blank? %>
+			<img src=<%= @item.avatar_url %> width="400" , height="300"></img>
+		<% end %>
+		<br><br>
+		<p>	Summary: <br> <%= @item.summary %> </p>
+		<p>	Price: $<%= @item.price %> </p>
+		<%= link_to 'Edit', edit_item_path(@item) %>
+	</aside>
+</div>
