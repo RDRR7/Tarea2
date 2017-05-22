@@ -41,7 +41,7 @@
 
 			<%= f.submit "Update item", class: "btn btn-primary" %>
 			<%= link_to 'Delete', @item, method: :delete, data: { confirm: "Are you sure?" } , class: "btn btn-primary"%>
-			<%= link_to  'Cancel', items_path, class: "btn btn-primary" %>
+			<%= link_to  'Cancel', @item, class: "btn btn-primary" %>
 		<% end %>
 	</div>
 </div>
